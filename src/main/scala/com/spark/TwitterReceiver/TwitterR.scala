@@ -50,6 +50,7 @@ object TwitterR extends App{
   ssc.checkpoint("hdfs://sandbox-hdp.hortonworks.com:8020/checkpoint")
   //ssc.checkpoint(".")
   ssc.start()
+
   ssc.awaitTermination()
 }
 /** Case class for converting RDD to DataFrame */
